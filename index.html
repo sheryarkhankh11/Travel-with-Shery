@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travel with Saad — Guided Journeys Through Pakistan's North</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="backend">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Work+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<header id="site-header">
+  <div class="wrap">
+    <nav>
+      <a href="#top" class="logo">Travel with <span>SHERY</span></a>
+      <ul class="nav-links">
+        <li><a href="#tours">Journeys</a></li>
+        <li><a href="#why">Why Us</a></li>
+        <li><a href="#booking">Book</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#booking" class="nav-cta">Plan My Trip</a>
+      <button class="burger" id="burgerBtn" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </div>
+  <div class="mobile-panel" id="mobilePanel">
+    <a href="#tours">Journeys</a>
+    <a href="#why">Why Us</a>
+    <a href="#booking">Book</a>
+    <a href="#contact">Contact</a>
+    <a href="#booking" class="nav-cta">Plan My Trip</a>
+  </div>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow">Boutique tours · Pakistan &amp; beyond</p>
+        <h1>Every good journey<br>starts with <em>someone who knows the way.</em></h1>
+        <p class="lead">Travel with Saad runs small-group and private tours through Hunza, Skardu, Swat, and the valleys most travel sites skip — planned, guided, and followed up on personally.</p>
+        <div class="hero-actions">
+          <a href="#booking" class="btn btn-primary">Start Booking</a>
+          <a href="#tours" class="btn btn-ghost">See Journeys</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>12+</strong><span>Routes Guided</span></div>
+          <div><strong>800+</strong><span>Travelers Hosted</span></div>
+          <div><strong>4.9/5</strong><span>Average Rating</span></div>
+        </div>
+      </div>
+
+      <div class="trail-card">
+        <svg viewBox="0 0 340 300" xmlns="http://www.w3.org/2000/svg">
+          <path d="M30 250 C 80 200, 60 150, 120 120 S 200 80, 180 40 S 260 20, 300 60"
+                fill="none" stroke="#8B3A2B" stroke-width="2" stroke-dasharray="1 10" stroke-linecap="round"/>
+          <circle cx="30" cy="250" r="7" fill="#1F5C4E"/>
+          <circle cx="120" cy="120" r="7" fill="#1F5C4E"/>
+          <circle cx="180" cy="40" r="7" fill="#C99A3E"/>
+          <circle cx="300" cy="60" r="7" fill="#8B3A2B"/>
+          <text x="42" y="254" font-family="JetBrains Mono, monospace" font-size="11" fill="#1B1B16">Islamabad</text>
+          <text x="128" y="115" font-family="JetBrains Mono, monospace" font-size="11" fill="#1B1B16">Naran</text>
+          <text x="150" y="34" font-family="JetBrains Mono, monospace" font-size="11" fill="#1B1B16">Skardu</text>
+          <text x="230" y="55" font-family="JetBrains Mono, monospace" font-size="11" fill="#1B1B16">Hunza</text>
+        </svg>
+        <p class="cap">a route we've walked before — so you don't have to guess</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOURS -->
+  <section id="tours">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Journeys</p>
+        <h2>Four routes, each one led personally</h2>
+        <p>Pick a journey below to pre-fill the booking form, or tell us to build a custom itinerary.</p>
+      </div>
+
+      <div class="tour-rail">
+        <article class="tour-card">
+          <div class="waypoint">01</div>
+          <div class="tour-img"><span>HUNZA VALLEY · 6 DAYS</span></div>
+          <div class="tour-body">
+            <h3>Hunza &amp; Attabad</h3>
+            <p>Karimabad's old forts, Attabad's turquoise water, and a night under the Passu cones.</p>
+            <div class="tour-meta">
+              <div class="tour-price">PKR 65,000<small>per person, land only</small></div>
+              <button class="tour-book" data-tour="Hunza & Attabad — 6 Days" data-price="65000">Book</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="tour-card">
+          <div class="waypoint">02</div>
+          <div class="tour-img"><span>SKARDU · 7 DAYS</span></div>
+          <div class="tour-body">
+            <h3>Skardu &amp; Deosai</h3>
+            <p>Shangrila Lake, the Deosai plains at dusk, and a Shigar Fort stay.</p>
+            <div class="tour-meta">
+              <div class="tour-price">PKR 78,000<small>per person, land only</small></div>
+              <button class="tour-book" data-tour="Skardu & Deosai — 7 Days" data-price="78000">Book</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="tour-card">
+          <div class="waypoint">03</div>
+          <div class="tour-img"><span>SWAT VALLEY · 4 DAYS</span></div>
+          <div class="tour-body">
+            <h3>Swat &amp; Kalam</h3>
+            <p>Mingora's bazaars, Malam Jabba's ridgeline, and the pine forests of Kalam.</p>
+            <div class="tour-meta">
+              <div class="tour-price">PKR 38,000<small>per person, land only</small></div>
+              <button class="tour-book" data-tour="Swat & Kalam — 4 Days" data-price="38000">Book</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section id="why" class="alt">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Why Travel with Saad</p>
+        <h2>Booked in minutes. Planned like we're coming too.</h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-item">
+          <span class="mark">→ 01</span>
+          <h3>Small groups, real guides</h3>
+          <p>Capped at 12 travelers per departure, led by guides who grew up on these roads.</p>
+        </div>
+        <div class="why-item">
+          <span class="mark">→ 02</span>
+          <h3>Instant online booking</h3>
+          <p>Pick dates, see the estimate, and lock your seat — no back-and-forth calls required.</p>
+        </div>
+        <div class="why-item">
+          <span class="mark">→ 03</span>
+          <h3>Flexible reschedule</h3>
+          <p>Weather closes passes sometimes. Move your date free of charge, up to 72 hours out.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING -->
+  <section id="booking">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Book Online</p>
+        <h2>Reserve your seat</h2>
+        <p>Fill in your details — you'll get an estimate instantly and a confirmation reference on submit.</p>
+      </div>
+
+      <div class="booking-grid">
+        <form class="book-form" id="bookingForm" novalidate>
+          <div class="field">
+            <label for="destination">Journey</label>
+            <select id="destination" required>
+              <option value="">Select a journey</option>
+              <option value="Hunza & Attabad — 6 Days" data-price="65000">Hunza &amp; Attabad — 6 Days (PKR 65,000)</option>
+              <option value="Skardu & Deosai — 7 Days" data-price="78000">Skardu &amp; Deosai — 7 Days (PKR 78,000)</option>
+              <option value="Swat & Kalam — 4 Days" data-price="38000">Swat &amp; Kalam — 4 Days (PKR 38,000)</option>
+              <option value="Custom itinerary" data-price="0">Custom itinerary — quote on request</option>
+            </select>
+            <small class="err">Please choose a journey.</small>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="fullName">Full name</label>
+              <input type="text" id="fullName" placeholder="Your name" required>
+              <small class="err">Please enter your name.</small>
+            </div>
+            <div class="field">
+              <label for="travelers">Travelers</label>
+              <input type="number" id="travelers" min="1" max="20" value="1" required>
+              <small class="err">Enter a number between 1 and 20.</small>
+            </div>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="you@example.com" required>
+              <small class="err">Enter a valid email.</small>
+            </div>
+            <div class="field">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" placeholder="03xx xxxxxxx" required>
+              <small class="err">Enter a valid phone number.</small>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="date">Preferred start date</label>
+            <input type="date" id="date" required>
+            <small class="err">Please pick a future date.</small>
+          </div>
+
+          <div class="field">
+            <label for="notes">Notes (optional)</label>
+            <textarea id="notes" rows="3" placeholder="Dietary needs, pickup point, anything else we should know"></textarea>
+          </div>
+
+          <div class="estimate">
+            <span>Estimated total</span>
+            <strong id="estimateAmount">PKR 0</strong>
+          </div>
+
+          <button type="submit" class="submit-btn">Confirm Booking</button>
+
+          <div class="confirm-panel" id="confirmPanel">
+            <h4>You're booked, provisionally.</h4>
+            <p>Reference <span class="confirm-ref" id="confirmRef"></span> — we'll email your itinerary and payment link within a few hours to confirm the seat.</p>
+          </div>
+        </form>
+
+        <div class="booking-note">
+          <p class="eyebrow">Good to know</p>
+          <p style="margin-top:10px;">This form captures your request instantly, but a live company site needs a backend to actually process it. Before you launch, connect:</p>
+          <ul>
+            <li><strong>A booking API or database</strong> — to store reservations and check date availability.</li>
+            <li><strong>A payment gateway</strong> — e.g. JazzCash, Easypaisa, or Stripe, to take deposits online.</li>
+            <li><strong>Email/SMS confirmation</strong> — to send the itinerary and receipt automatically.</li>
+            <li><strong>An admin view</strong> — so you can see and manage incoming bookings.</li>
+          </ul>
+          <p style="margin-top:14px;">I can help wire any of these up once you tell me which service you'd like to use.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="alt">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Recent travelers</p>
+        <h2>What the last convoy said</h2>
+      </div>
+      <div class="quote-rail">
+        <div class="quote">
+          <p>"Saad's team rerouted us around a landslide without losing a single day of the itinerary. Never felt like an afterthought."</p>
+          <div class="who">— Fatima R., Skardu trip</div>
+        </div>
+        <div class="quote">
+          <p>"Booked on my phone in under five minutes, deposit and all. The kind of easy I didn't expect from a small outfit."</p>
+          <div class="who">— Ahmed K., Hunza trip</div>
+        </div>
+        <div class="quote">
+          <p>"Our guide grew up twenty minutes from Kalam. That local knowledge changed the whole trip."</p>
+          <div class="who">— Sara M., Swat trip</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>Travel with Saad</h4>
+        <p>A small, guided-tour company based in Islamabad, running trips into Pakistan's northern valleys since 2019.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:hello@travelwithsaad.com">hello@travelwithsaad.com</a></li>
+          <li><a href="tel:+923001234567">+92 300 1234567</a></li>
+          <li><a href="#">Islamabad, Pakistan</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#tours">Journeys</a></li>
+          <li><a href="#booking">Book Online</a></li>
+          <li><a href="#why">Why Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Travel with Saad</span>
+      <span>Built for the road ahead</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // ---- Booking API config ----
+  // Paste the Google Apps Script "web app" URL here once deployed (see setup instructions).
+  // Leave blank to keep the form working in demo-only mode.
+  const BOOKING_API_URL = '';
+
+  // Mobile nav toggle
+  const header = document.getElementById('site-header');
+  const burgerBtn = document.getElementById('burgerBtn');
+  burgerBtn.addEventListener('click', () => {
+    const isOpen = header.classList.toggle('open');
+    burgerBtn.setAttribute('aria-expanded', isOpen);
+  });
+  document.querySelectorAll('.mobile-panel a').forEach(a => {
+    a.addEventListener('click', () => {
+      header.classList.remove('open');
+      burgerBtn.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  // Pre-fill destination from tour cards
+  document.querySelectorAll('.tour-book').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const tourName = btn.getAttribute('data-tour');
+      const select = document.getElementById('destination');
+      select.value = tourName;
+      updateEstimate();
+      document.getElementById('booking').scrollIntoView({behavior:'smooth'});
+      document.getElementById('fullName').focus({preventScroll:true});
+    });
+  });
+
+  // Estimate calculation
+  const destSelect = document.getElementById('destination');
+  const travelersInput = document.getElementById('travelers');
+  const estimateAmount = document.getElementById('estimateAmount');
+
+  function updateEstimate(){
+    const selected = destSelect.options[destSelect.selectedIndex];
+    const price = selected ? parseInt(selected.getAttribute('data-price') || '0', 10) : 0;
+    const travelers = Math.max(1, parseInt(travelersInput.value || '1', 10));
+    const total = price * travelers;
+    estimateAmount.textContent = total > 0
+      ? 'PKR ' + total.toLocaleString('en-PK')
+      : (destSelect.value === 'Custom itinerary' ? 'Quote on request' : 'PKR 0');
+  }
+  destSelect.addEventListener('change', updateEstimate);
+  travelersInput.addEventListener('input', updateEstimate);
+
+  // Set min date to today
+  const dateInput = document.getElementById('date');
+  const today = new Date().toISOString().split('T')[0];
+  dateInput.setAttribute('min', today);
+
+  // Validation + fake submit
+  const form = document.getElementById('bookingForm');
+  const confirmPanel = document.getElementById('confirmPanel');
+  const confirmRef = document.getElementById('confirmRef');
+
+  function setInvalid(fieldEl, invalid){
+    fieldEl.classList.toggle('invalid', invalid);
+  }
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    let valid = true;
+
+    const destField = destSelect.closest('.field');
+    if(!destSelect.value){ setInvalid(destField, true); valid = false; } else setInvalid(destField, false);
+
+    const nameEl = document.getElementById('fullName');
+    const nameField = nameEl.closest('.field');
+    if(nameEl.value.trim().length < 2){ setInvalid(nameField, true); valid = false; } else setInvalid(nameField, false);
+
+    const travelersField = travelersInput.closest('.field');
+    const tVal = parseInt(travelersInput.value, 10);
+    if(!tVal || tVal < 1 || tVal > 20){ setInvalid(travelersField, true); valid = false; } else setInvalid(travelersField, false);
+
+    const emailEl = document.getElementById('email');
+    const emailField = emailEl.closest('.field');
+    const emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailEl.value.trim());
+    if(!emailOk){ setInvalid(emailField, true); valid = false; } else setInvalid(emailField, false);
+
+    const phoneEl = document.getElementById('phone');
+    const phoneField = phoneEl.closest('.field');
+    const phoneOk = phoneEl.value.replace(/\D/g,'').length >= 10;
+    if(!phoneOk){ setInvalid(phoneField, true); valid = false; } else setInvalid(phoneField, false);
+
+    const dateField = dateInput.closest('.field');
+    const dateOk = dateInput.value && dateInput.value >= today;
+    if(!dateOk){ setInvalid(dateField, true); valid = false; } else setInvalid(dateField, false);
+
+    if(!valid){
+      confirmPanel.classList.remove('show');
+      const firstInvalid = form.querySelector('.invalid');
+      if(firstInvalid) firstInvalid.scrollIntoView({behavior:'smooth', block:'center'});
+      return;
+    }
+
+    const payload = {
+      destination: destSelect.value,
+      name: nameEl.value.trim(),
+      email: emailEl.value.trim(),
+      phone: phoneEl.value.trim(),
+      travelers: tVal,
+      date: dateInput.value,
+      notes: document.getElementById('notes').value.trim(),
+      estimate: estimateAmount.textContent
+    };
+
+    const submitBtn = form.querySelector('.submit-btn');
+    const originalLabel = submitBtn.textContent;
+
+    if (!BOOKING_API_URL) {
+      // Demo mode: no backend configured yet.
+      const ref = 'TWS-' + Math.random().toString(36).slice(2,8).toUpperCase();
+      confirmRef.textContent = ref;
+      confirmPanel.classList.add('show');
+      confirmPanel.querySelector('p').innerHTML =
+        'Reference <span class="confirm-ref">' + ref + '</span> — demo mode: no booking API is connected yet, so nothing was actually saved or emailed. Connect BOOKING_API_URL to make this real.';
+      confirmPanel.scrollIntoView({behavior:'smooth', block:'nearest'});
+      return;
+    }
+
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Sending…';
+    confirmPanel.classList.remove('show');
+
+    fetch(BOOKING_API_URL, {
+      method: 'POST',
+      body: JSON.stringify(payload) // sent as text/plain to avoid CORS preflight; the API parses it as JSON
+    })
+      .then(res => res.json())
+      .then(result => {
+        submitBtn.disabled = false;
+        submitBtn.textContent = originalLabel;
+        if (result.ok) {
+          confirmRef.textContent = result.ref;
+          confirmPanel.querySelector('p').innerHTML =
+            'Reference <span class="confirm-ref" id="confirmRef">' + result.ref + '</span> — we\'ve emailed your confirmation and will follow up shortly with the payment link.';
+          confirmPanel.classList.add('show');
+          form.reset();
+          updateEstimate();
+        } else {
+          alert('Something went wrong submitting your booking. Please try again or contact us directly.');
+        }
+        confirmPanel.scrollIntoView({behavior:'smooth', block:'nearest'});
+      })
+      .catch(() => {
+        submitBtn.disabled = false;
+        submitBtn.textContent = originalLabel;
+        alert('Could not reach the booking system. Please check your connection and try again, or contact us directly.');
+      });
+  });
+</script>
+
+</body>
+</html>

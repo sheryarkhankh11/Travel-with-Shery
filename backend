@@ -1,0 +1,36 @@
+function doPost(e) {
+  try {
+    var data = JSON.parse(e.postData.contents);
+    var ss = SpreadsheetApp.getActiveSpreadsheet();
+    var sheet = ss.getSheetByName('Bookings') || ss.insertSheet('Bookings');
+
+    if (sheet.getLastRow() === 0) {
+      sheet.appendRow(['Timestamp','Reference','Destination','Name','Email','Phone','Travelers','Date','Notes','Estimate']);
+    }
+
+    var ref = 'TWS-' + Math.random().toString(36).slice(2,8).toUpperCase();
+    sheet.appendRow([new Date(), ref, data.destination, data.name, data.email,
+                      data.phone, data.travelers, data.date, data.notes, data.estimate]);
+
+    MailApp.sendEmail({
+      to: 'YOUR-EMAIL@example.com',
+      subject: 'New booking: ' + ref,
+      body: 'Reference: ' + ref + '\nDestination: ' + data.destination + '\nName: ' + data.name +
+            '\nEmail: ' + data.email + '\nPhone: ' + data.phone + '\nTravelers: ' + data.travelers +
+            '\nDate: ' + data.date + '\nEstimate: ' + data.estimate + '\nNotes: ' + data.notes
+    });
+
+    MailApp.sendEmail({
+      to: data.email,
+      subject: 'Booking received - ' + ref,
+      body: 'Hi ' + data.name + ',\n\nThanks for booking with Travel with Saad! Your reference is ' +
+            ref + '. We will follow up shortly with payment details and your itinerary.\n\n— Team Travel with Saad'
+    });
+
+    return ContentService.createTextOutput(JSON.stringify({ok:true, ref:ref}))
+      .setMimeType(ContentService.MimeType.JSON);
+  } catch (err) {
+    return ContentService.createTextOutput(JSON.stringify({ok:false, error:String(err)}))
+      .setMimeType(ContentService.MimeType.JSON);
+  }
+}
